@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks list</title>
+</head>
+<body>
+<h1>Tasks List</h1>
+<a th:href="@{/}">Back to top</a>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Summary</th>
+            <th>Detail</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="task:${tasks}" th:object="${task}">
+            <td th:text="*{id}"></td>
+            <td th:text="*{summary}"></td>
+            <td th:text="*{description}"></td>
+            <td th:text="*{status}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<table></table>
+</body>
+</html>
