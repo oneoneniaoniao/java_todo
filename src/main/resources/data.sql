@@ -1,0 +1,2 @@
+INSERT INTO tasks (summary, description, status) VALUES ('Learn SQL', 'Create TODO Application DB', 'DONE');
+INSERT INTO tasks (summary, description, status) VALUES ('Learn security', 'Create TODO Application', 'DOING');
