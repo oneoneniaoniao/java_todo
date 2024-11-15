@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Detail</title>
+</head>
+<body>
+<h1>Task Detail</h1>
+<a th:href=@{/tasks}>Tasks list</a>
+<div th:object="${task}">
+    <p th:text="'#' + *{id}+' ' + *{summary}"></p>
+    <p th:text="*{description}"></p>
+    <pre th:text="*{status}"></pre>
+
+</div>
+</body>
+</html>
